@@ -8,6 +8,8 @@ import { useState } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import MovieCardDetails from "./components/MovieCardDetails/MovieCardDetails";
 import MovieCard from "./components/moviecard/MovieCard";
+import Footer from "./components/Footer/Footer";
+
 
 
 
@@ -51,12 +53,22 @@ function App() {
             path="/MovieCardDetails/:id"
             render={(props) => <MovieCardDetails {...props} movieList={movielist} exact/>}
           />
+    
+ 
     </>
+    <Route
+    path="/"
+    
+    />
   </Router>
+  
 
   
-   
+  <Footer/>
     </div>
+    
+    
+  
   );
 }
 

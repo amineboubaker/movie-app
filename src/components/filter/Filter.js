@@ -1,6 +1,7 @@
 import React from "react";
 import { Form, FormControl, Nav, Navbar } from "react-bootstrap";
 import ReactStars from "react-rating-stars-component";
+import { Link } from "react-router-dom";
 
 const Filter = ({ title, handleChange,ratingChanged }) => {
  
@@ -8,9 +9,9 @@ const Filter = ({ title, handleChange,ratingChanged }) => {
     <Navbar bg="dark" variant="dark">
     <Navbar.Brand href="#home">ANIMEX</Navbar.Brand>
     <Nav className="mr-auto">
-      <Nav.Link href="#home">Home</Nav.Link>
-      <Nav.Link href="#features">Features</Nav.Link>
-      <Nav.Link href="#News">News</Nav.Link>
+      <Link to="/" href="#home">Home</Link>
+      <Link href="#features">Features</Link>
+      <Link href="#News">News</Link>
     </Nav>
 
       <div>
